@@ -1,0 +1,193 @@
+[
+    {
+        "type": "function",
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "name": "changeColor",
+        "inputs": [
+            {
+                "type": "string",
+                "name": "_newColor",
+                "internalType": "string"
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "name": "changeNickname",
+        "inputs": [
+            {
+                "type": "string",
+                "name": "_newNickname",
+                "internalType": "string"
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "name": "changeStyle",
+        "inputs": [
+            {
+                "type": "uint256",
+                "name": "_newStyle",
+                "internalType": "uint256"
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            {
+                "type": "string",
+                "name": "",
+                "internalType": "string"
+            }
+        ],
+        "name": "color",
+        "inputs": [
+            {
+                "type": "address",
+                "name": "penguinAddress",
+                "internalType": "address"
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            {
+                "type": "bool",
+                "name": "",
+                "internalType": "bool"
+            }
+        ],
+        "name": "isRegistered",
+        "inputs": [
+            {
+                "type": "address",
+                "name": "penguinAddress",
+                "internalType": "address"
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            {
+                "type": "string",
+                "name": "",
+                "internalType": "string"
+            }
+        ],
+        "name": "nickname",
+        "inputs": [
+            {
+                "type": "address",
+                "name": "penguinAddress",
+                "internalType": "address"
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            {
+                "type": "bool",
+                "name": "",
+                "internalType": "bool"
+            }
+        ],
+        "name": "nicknameDB",
+        "inputs": [
+            {
+                "type": "string",
+                "name": "",
+                "internalType": "string"
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            {
+                "type": "string",
+                "name": "nickname",
+                "internalType": "string"
+            },
+            {
+                "type": "string",
+                "name": "color",
+                "internalType": "string"
+            },
+            {
+                "type": "bool",
+                "name": "isRegistered",
+                "internalType": "bool"
+            },
+            {
+                "type": "uint256",
+                "name": "style",
+                "internalType": "uint256"
+            }
+        ],
+        "name": "penguDB",
+        "inputs": [
+            {
+                "type": "address",
+                "name": "",
+                "internalType": "address"
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "nonpayable",
+        "outputs": [],
+        "name": "registerYourPenguin",
+        "inputs": [
+            {
+                "type": "string",
+                "name": "_nickname",
+                "internalType": "string"
+            },
+            {
+                "type": "string",
+                "name": "_color",
+                "internalType": "string"
+            },
+            {
+                "type": "uint256",
+                "name": "_style",
+                "internalType": "uint256"
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "stateMutability": "view",
+        "outputs": [
+            {
+                "type": "uint256",
+                "name": "",
+                "internalType": "uint256"
+            }
+        ],
+        "name": "style",
+        "inputs": [
+            {
+                "type": "address",
+                "name": "penguinAddress",
+                "internalType": "address"
+            }
+        ]
+    }
+]

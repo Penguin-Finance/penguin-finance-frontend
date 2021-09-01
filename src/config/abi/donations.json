@@ -1,0 +1,520 @@
+[
+   {
+      "type": "constructor",
+      "stateMutability": "nonpayable",
+      "inputs": [
+         {
+            "type": "address",
+            "name": "_pefi",
+            "internalType": "address"
+         },
+         {
+            "type": "address",
+            "name": "_penguinDatabase",
+            "internalType": "address"
+         },
+         {
+            "type": "uint256",
+            "name": "_eventDuration",
+            "internalType": "uint256"
+         },
+         {
+            "type": "uint256",
+            "name": "_minDonationPefi",
+            "internalType": "uint256"
+         },
+         {
+            "type": "uint256",
+            "name": "_minDonationAVAX",
+            "internalType": "uint256"
+         },
+         {
+            "type": "address",
+            "name": "_fundsReceiver",
+            "internalType": "address payable"
+         },
+         {
+            "type": "uint256",
+            "name": "_avaxTierOne",
+            "internalType": "uint256"
+         },
+         {
+            "type": "uint256",
+            "name": "_avaxTierTwo",
+            "internalType": "uint256"
+         },
+         {
+            "type": "uint256",
+            "name": "_pefiTierOne",
+            "internalType": "uint256"
+         },
+         {
+            "type": "uint256",
+            "name": "_pefiTierTwo",
+            "internalType": "uint256"
+         }
+      ]
+   },
+   {
+      "type": "event",
+      "name": "AvaxDonated",
+      "inputs": [
+         {
+            "type": "address",
+            "name": "donor",
+            "internalType": "address",
+            "indexed": true
+         },
+         {
+            "type": "uint256",
+            "name": "amountAVAX",
+            "internalType": "uint256",
+            "indexed": false
+         }
+      ],
+      "anonymous": false
+   },
+   {
+      "type": "event",
+      "name": "PefiDonated",
+      "inputs": [
+         {
+            "type": "address",
+            "name": "donor",
+            "internalType": "address",
+            "indexed": true
+         },
+         {
+            "type": "uint256",
+            "name": "amountPEFI",
+            "internalType": "uint256",
+            "indexed": false
+         }
+      ],
+      "anonymous": false
+   },
+   {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+         {
+            "type": "address",
+            "name": "",
+            "internalType": "address"
+         }
+      ],
+      "name": "admin",
+      "inputs": []
+   },
+   {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+         {
+            "type": "uint256",
+            "name": "",
+            "internalType": "uint256"
+         }
+      ],
+      "name": "avaxTierOne",
+      "inputs": []
+   },
+   {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+         {
+            "type": "uint256",
+            "name": "",
+            "internalType": "uint256"
+         }
+      ],
+      "name": "avaxTierTwo",
+      "inputs": []
+   },
+   {
+      "type": "function",
+      "stateMutability": "nonpayable",
+      "outputs": [],
+      "name": "changeFinalDate",
+      "inputs": [
+         {
+            "type": "uint256",
+            "name": "_newFinalDateInSeconds",
+            "internalType": "uint256"
+         }
+      ]
+   },
+   {
+      "type": "function",
+      "stateMutability": "payable",
+      "outputs": [],
+      "name": "donateAvax",
+      "inputs": []
+   },
+   {
+      "type": "function",
+      "stateMutability": "nonpayable",
+      "outputs": [],
+      "name": "donatePefi",
+      "inputs": [
+         {
+            "type": "uint256",
+            "name": "_amount",
+            "internalType": "uint256"
+         }
+      ]
+   },
+   {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+         {
+            "type": "uint256",
+            "name": "",
+            "internalType": "uint256"
+         }
+      ],
+      "name": "finalDate",
+      "inputs": []
+   },
+   {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+         {
+            "type": "address",
+            "name": "",
+            "internalType": "address payable"
+         }
+      ],
+      "name": "fundsReceiver",
+      "inputs": []
+   },
+   {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+         {
+            "type": "string",
+            "name": "",
+            "internalType": "string"
+         }
+      ],
+      "name": "getCurrentEmperorNickname",
+      "inputs": []
+   },
+   {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+         {
+            "type": "address",
+            "name": "",
+            "internalType": "address"
+         }
+      ],
+      "name": "hasUnlockedFirstNFT",
+      "inputs": [
+         {
+            "type": "uint256",
+            "name": "",
+            "internalType": "uint256"
+         }
+      ]
+   },
+   {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+         {
+            "type": "address",
+            "name": "",
+            "internalType": "address"
+         }
+      ],
+      "name": "hasUnlockedNFT",
+      "inputs": [
+         {
+            "type": "uint256",
+            "name": "",
+            "internalType": "uint256"
+         }
+      ]
+   },
+   {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+         {
+            "type": "address",
+            "name": "",
+            "internalType": "address"
+         }
+      ],
+      "name": "hasUnlockedSecondNFT",
+      "inputs": [
+         {
+            "type": "uint256",
+            "name": "",
+            "internalType": "uint256"
+         }
+      ]
+   },
+   {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+         {
+            "type": "uint256",
+            "name": "",
+            "internalType": "uint256"
+         }
+      ],
+      "name": "latestDonation",
+      "inputs": [
+         {
+            "type": "uint256",
+            "name": "",
+            "internalType": "uint256"
+         }
+      ]
+   },
+   {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+         {
+            "type": "uint256",
+            "name": "",
+            "internalType": "uint256"
+         }
+      ],
+      "name": "latestDonationAvax",
+      "inputs": []
+   },
+   {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+         {
+            "type": "uint256",
+            "name": "",
+            "internalType": "uint256"
+         }
+      ],
+      "name": "latestDonationPefi",
+      "inputs": []
+   },
+   {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+         {
+            "type": "address",
+            "name": "",
+            "internalType": "address"
+         }
+      ],
+      "name": "latestDonor",
+      "inputs": []
+   },
+   {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+         {
+            "type": "uint256",
+            "name": "",
+            "internalType": "uint256"
+         }
+      ],
+      "name": "minDonationAVAX",
+      "inputs": []
+   },
+   {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+         {
+            "type": "uint256",
+            "name": "",
+            "internalType": "uint256"
+         }
+      ],
+      "name": "minDonationPefi",
+      "inputs": []
+   },
+   {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+         {
+            "type": "address",
+            "name": "",
+            "internalType": "address"
+         }
+      ],
+      "name": "pefi",
+      "inputs": []
+   },
+   {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+         {
+            "type": "uint256",
+            "name": "",
+            "internalType": "uint256"
+         }
+      ],
+      "name": "pefiTierOne",
+      "inputs": []
+   },
+   {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+         {
+            "type": "uint256",
+            "name": "",
+            "internalType": "uint256"
+         }
+      ],
+      "name": "pefiTierTwo",
+      "inputs": []
+   },
+   {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+         {
+            "type": "address",
+            "name": "",
+            "internalType": "address"
+         }
+      ],
+      "name": "penguinDatabase",
+      "inputs": []
+   },
+   {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+         {
+            "type": "uint256",
+            "name": "pefiDonations",
+            "internalType": "uint256"
+         },
+         {
+            "type": "uint256",
+            "name": "avaxDonations",
+            "internalType": "uint256"
+         }
+      ],
+      "name": "playerDB",
+      "inputs": [
+         {
+            "type": "address",
+            "name": "",
+            "internalType": "address"
+         }
+      ]
+   },
+   {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+         {
+            "type": "uint256",
+            "name": "",
+            "internalType": "uint256"
+         }
+      ],
+      "name": "totalAvaxRaised",
+      "inputs": []
+   },
+   {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+         {
+            "type": "uint256",
+            "name": "",
+            "internalType": "uint256"
+         }
+      ],
+      "name": "totalNumberOfDonations",
+      "inputs": []
+   },
+   {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+         {
+            "type": "uint256",
+            "name": "",
+            "internalType": "uint256"
+         }
+      ],
+      "name": "totalPefiRaised",
+      "inputs": []
+   },
+   {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+         {
+            "type": "bool",
+            "name": "",
+            "internalType": "bool"
+         }
+      ],
+      "name": "unlockedFirstNFT",
+      "inputs": [
+         {
+            "type": "address",
+            "name": "",
+            "internalType": "address"
+         }
+      ]
+   },
+   {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+         {
+            "type": "bool",
+            "name": "",
+            "internalType": "bool"
+         }
+      ],
+      "name": "unlockedNFT",
+      "inputs": [
+         {
+            "type": "address",
+            "name": "",
+            "internalType": "address"
+         }
+      ]
+   },
+   {
+      "type": "function",
+      "stateMutability": "view",
+      "outputs": [
+         {
+            "type": "bool",
+            "name": "",
+            "internalType": "bool"
+         }
+      ],
+      "name": "unlockedSecondNFT",
+      "inputs": [
+         {
+            "type": "address",
+            "name": "",
+            "internalType": "address"
+         }
+      ]
+   }
+]
